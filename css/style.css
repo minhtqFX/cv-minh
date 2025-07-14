@@ -1,0 +1,303 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/*long chu vao anh*/
+.img-banner {
+  position: relative;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+#banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*phan thong tin tu nav-bar den cuoi*/
+section > .container {
+  /*width: 1170px;*/
+  margin: auto;
+  display: block;
+
+  padding: 30px 10px;
+  line-height: 25px;
+}
+
+/*nav-bar*/
+
+#nav-bar > .container {
+  display: flex;
+  /*grid-template-columns: auto auto auto auto auto;*/
+  /*background-color: #199cdb;*/
+  /*height: 80px;*/
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.start {
+  padding-right: 400px;
+}
+
+a {
+  color: black;
+  position: relative;
+}
+
+img {
+  color: #6366fc;
+  position: relative;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/*avatar*/
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #f7f7f7;
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
+  top: -60px;
+}
+
+/* muc tieu nghe nghiep - thong tin ca nhan*/
+
+#about {
+  padding-top: 30px;
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+
+  margin: 0 30px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.info li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.info span {
+  font-weight: bold;
+}
+
+/*3 cot, 2 hang*/
+#job-info .container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.grid img {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.border-1 {
+  padding: 20px;
+  border-style: ridge;
+  border-width: 2px;
+}
+.border-1 h4 {
+  margin-top: 20px;
+}
+.timeline {
+  font-style: italic;
+}
+.timeline span {
+  background-color: rgb(111, 156, 199);
+  color: #f7f7f7;
+  border: 5px solid rgb(111, 156, 199);
+  border-radius: 20px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+  gap: 10px;
+}
+.grid-2 img {
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(111, 156, 199);
+  border-radius: 50%;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cert-card {
+  margin: 10px 40px;
+  padding: 10px;
+  border: 1px solid aquamarine;
+  border-radius: 10px;
+}
+
+.img-cert {
+  gap: 10px;
+  padding-right: 15px;
+}
+
+.img-cert img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+/*thanh thang diem*/
+.score-blue {
+  background: #199cdb;
+  display: inline-block;
+  height: 4px;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 45px;
+}
+.score-grey {
+  background-color: #8c8e8f;
+  display: inline-block;
+  height: 4px;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.du-an {
+  display: flex; /* Biến container này thành một Flex container */
+  justify-content: space-around; /* Phân bố đều khoảng cách giữa các cột */
+  align-items: flex-start; /* Căn chỉnh các cột lên đầu (theo chiều dọc) */
+  flex-wrap: wrap; /* Cho phép các cột xuống hàng nếu không đủ chỗ */
+  gap: 20px; /* Tạo khoảng cách giữa các cột */
+  padding: 20px; /* Khoảng đệm xung quanh toàn bộ container */
+  background-color: #f0f0f0; /* Màu nền cho container */
+  border-radius: 8px; /* Bo tròn các góc */
+}
+
+.du-an-img img {
+  width: 540px;
+}
+.du-an-border {
+  border-style: groove;
+  border-width: 2px;
+}
+.border-top {
+  border-top-style: groove;
+  padding: 10px;
+  border-width: 2px;
+  column-count: 3;
+  column-gap: 20px;
+}
+.border-xanh {
+  background-color: rgb(111, 156, 199);
+  color: #f7f7f7;
+  border: 5px solid rgb(111, 156, 199);
+  border-radius: 20px;
+}
+/*phan footer*/
+#footer ul {
+  display: flex;
+  background-color: #d3dcdf;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #about .container {
+    grid-template-columns: 1fr;
+    margin: 0 10px;
+  }
+
+  #job-info .container {
+    grid-template-columns: 1fr;
+  }
+
+  #nav-bar > .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .avatar {
+    position: relative;
+    top: 0;
+    margin: 20px auto;
+  }
+
+  .start {
+    padding-right: 0;
+  }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .du-an-border {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .du-an-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-container {
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about .container {
+    grid-template-columns: 1fr;
+  }
+
+  #job-info .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

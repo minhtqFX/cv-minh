@@ -1,0 +1,366 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* long chu vao anh */
+.img-banner {
+  position: relative;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+#banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* phan thong tin tu nav-bar den cuoi */
+section > .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* nav-bar */
+#nav-bar > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.start {
+  flex-grow: 1;
+  text-align: left;
+}
+
+#nav-bar .container a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+#nav-bar .container a img {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+img {
+  position: relative;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* avatar */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #f7f7f7;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* muc tieu nghe nghiep - thong tin ca nhan */
+#about {
+  padding-top: 30px;
+  margin-top: 100px;
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#personal-info ul li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#personal-info ul li span {
+  font-weight: bold;
+}
+
+#job-info .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+#job-info .job-grid-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.border-1 {
+  border: 2px ridge #eee;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.grid img {
+  width: 50px;
+  height: 50px;
+}
+
+.timeline span {
+  background-color: rgb(111, 156, 199);
+  color: #fff;
+  border-radius: 20px;
+  padding: 2px 8px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-2 img {
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(111, 156, 199);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+/* Sửa lỗi bố cục cho phần Chứng chỉ */
+#certificate .container {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.cc {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cert-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cert-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cert-content p {
+  margin: 0;
+}
+
+.cert-content span {
+  font-weight: bold;
+}
+
+.img-cert {
+  padding-right: 15px;
+}
+
+.img-cert img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Sửa lỗi bố cục cho phần Dự án */
+#project .du-an {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.du-an-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.du-an-border {
+  border-style: groove;
+  border-width: 2px;
+  border-color: #eee;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.du-an-border h5 {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.border-top {
+  border-top-style: groove;
+  padding: 10px;
+  border-width: 2px;
+  border-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.border-top span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.border-top img {
+  width: 20px;
+  height: 20px;
+}
+
+.border-xanh {
+  background-color: rgb(111, 156, 199);
+  color: #f7f7f7;
+  border: 5px solid rgb(111, 156, 199);
+  border-radius: 20px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.du-an-grid {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 10px;
+}
+
+.du-an-grid p:first-child {
+  font-weight: bold;
+}
+
+/* phần footer */
+#footer ul {
+  display: flex;
+  background-color: #d3dcdf;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding: 20px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#footer ul li a img {
+  width: 24px;
+  height: 24px;
+}
+
+.email-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.email-section p {
+  text-align: center;
+}
+
+.view-more-btn {
+  margin: 10px 0;
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+}

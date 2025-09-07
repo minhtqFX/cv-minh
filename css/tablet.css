@@ -1,0 +1,14 @@
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about .container {
+    grid-template-columns: 1fr;
+  }
+
+  #job-info .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
